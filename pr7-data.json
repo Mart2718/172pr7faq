@@ -1,0 +1,189 @@
+{
+  "section": "PR7",
+  "title": "Properties and Graphs of Rational Functions",
+  "learningObjective": "Find the domain and range, vertical and horizontal asymptotes, and intercepts of a rational function and use this information to sketch the graph.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What is a rational function, and what determines its domain?",
+      "answer": "A rational function is any function that can be written as \\( r(x) = \\dfrac{p(x)}{q(x)} \\), a ratio of two polynomials. Its domain is every real number EXCEPT wherever the denominator \\( q(x) \\) equals zero — division by zero is undefined no matter what the numerator does at that point.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( r(x)=\\dfrac{x^2-3x+2}{x^2-4x+3} \\), factor the denominator: \\( x^2-4x+3=(x-1)(x-3) \\), so the domain excludes \\( x=1 \\) and \\( x=3 \\).</p></div>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What's the difference between a zero, a vertical asymptote, and a hole?",
+      "answer": "All three happen at special x-values, but they come from different combinations of the numerator \\( p \\) and denominator \\( q \\). A <strong>zero</strong> is where \\( p(a)=0 \\) but \\( q(a)\\neq 0 \\) — the function actually reaches 0 there. A <strong>vertical asymptote</strong> is where \\( q(a)=0 \\) but \\( p(a)\\neq 0 \\) — the function is undefined and shoots off toward \\( \\pm\\infty \\). A <strong>hole</strong> is where BOTH \\( p(a)=0 \\) and \\( q(a)=0 \\) at once — the function is still undefined there, but only because a common factor canceled, not because it blows up.<div class=\"graph-wrap\"><svg viewBox=\"0 0 420 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><line x1=\"40.0\" y1=\"150.0\" x2=\"380.0\" y2=\"150.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" /><line x1=\"140.0\" y1=\"6.0\" x2=\"140.0\" y2=\"182.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" /><line x1=\"40.0\" y1=\"134.0\" x2=\"380.0\" y2=\"134.0\" stroke=\"#1a6b6b\" stroke-width=\"2\" stroke-dasharray=\"6,4\" /><text x=\"375.0\" y=\"124.0\" font-size=\"12.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"end\" >y = 1 (HA)</text><line x1=\"260.0\" y1=\"16.0\" x2=\"260.0\" y2=\"182.0\" stroke=\"#D4622A\" stroke-width=\"2.2\" stroke-dasharray=\"6,4\" /><text x=\"266.0\" y=\"28.0\" font-size=\"12.5\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"start\" >x = 3 (VA)</text><polyline points=\"64.0,137.3 65.3,137.3 66.6,137.3 67.8,137.3 69.1,137.4 70.4,137.4 71.7,137.4 72.9,137.4 74.2,137.4 75.5,137.5 76.8,137.5 78.0,137.5 79.3,137.5 80.6,137.6 81.9,137.6 83.1,137.6 84.4,137.6 85.7,137.7 87.0,137.7 88.2,137.7 89.5,137.8 90.8,137.8 92.1,137.8 93.3,137.8 94.6,137.9 95.9,137.9 97.2,137.9 98.4,138.0 99.7,138.0 101.0,138.0 102.3,138.1 103.5,138.1 104.8,138.1 106.1,138.2 107.4,138.2 108.6,138.2 109.9,138.3 111.2,138.3 112.5,138.3 113.7,138.4 115.0,138.4 116.3,138.5 117.6,138.5 118.8,138.5 120.1,138.6 121.4,138.6 122.7,138.7 123.9,138.7 125.2,138.7 126.5,138.8 127.8,138.8 129.0,138.9 130.3,138.9 131.6,139.0 132.9,139.0 134.1,139.1 135.4,139.1 136.7,139.2 138.0,139.2 139.2,139.3 140.5,139.4 141.8,139.4 143.1,139.5 144.3,139.5 145.6,139.6 146.9,139.7 148.2,139.7 149.4,139.8 150.7,139.9 152.0,139.9 153.3,140.0 154.5,140.1 155.8,140.1 157.1,140.2 158.4,140.3 159.6,140.4 160.9,140.5 162.2,140.5 163.5,140.6 164.7,140.7 166.0,140.8 167.3,140.9 168.6,141.0 169.8,141.1 171.1,141.2 172.4,141.3 173.7,141.4 174.9,141.5 176.2,141.6 177.5,141.8 178.8,141.9 180.0,142.0 181.3,142.1 182.6,142.3 183.9,142.4 185.1,142.5 186.4,142.7 187.7,142.9 189.0,143.0 190.2,143.2 191.5,143.3 192.8,143.5 194.1,143.7 195.3,143.9 196.6,144.1 197.9,144.3 199.2,144.5 200.4,144.7 201.7,145.0 203.0,145.2 204.3,145.5 205.5,145.8 206.8,146.0 208.1,146.3 209.4,146.6 210.6,147.0 211.9,147.3 213.2,147.7 214.5,148.1 215.7,148.5 217.0,148.9 218.3,149.3 219.6,149.8 220.8,150.3 222.1,150.9 223.4,151.5 224.7,152.1 225.9,152.8 227.2,153.5 228.5,154.3 229.8,155.2 231.0,156.1 232.3,157.1 233.6,158.2 234.9,159.5 236.1,160.8 237.4,162.3 238.7,164.0 240.0,166.0 241.2,168.1 242.5,170.6 243.8,173.5 245.1,176.9 246.3,180.9 247.6,185.7 248.9,191.7 250.2,199.1 251.4,208.9 252.7,222.0 254.0,240.7\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"266.0,27.3 266.8,39.4 267.5,49.0 268.3,56.8 269.1,63.4 269.8,68.9 270.6,73.6 271.4,77.6 272.1,81.2 272.9,84.3 273.7,87.1 274.4,89.6 275.2,91.8 275.9,93.9 276.7,95.7 277.5,97.4 278.2,98.9 279.0,100.3 279.8,101.6 280.5,102.8 281.3,104.0 282.1,105.0 282.8,106.0 283.6,106.9 284.4,107.7 285.1,108.5 285.9,109.3 286.7,110.0 287.4,110.7 288.2,111.3 289.0,111.9 289.7,112.5 290.5,113.0 291.2,113.5 292.0,114.0 292.8,114.5 293.5,114.9 294.3,115.3 295.1,115.8 295.8,116.1 296.6,116.5 297.4,116.9 298.1,117.2 298.9,117.5 299.7,117.9 300.4,118.2 301.2,118.5 302.0,118.7 302.7,119.0 303.5,119.3 304.3,119.5 305.0,119.8 305.8,120.0 306.6,120.3 307.3,120.5 308.1,120.7 308.8,120.9 309.6,121.1 310.4,121.3 311.1,121.5 311.9,121.7 312.7,121.8 313.4,122.0 314.2,122.2 315.0,122.4 315.7,122.5 316.5,122.7 317.3,122.8 318.0,123.0 318.8,123.1 319.6,123.3 320.3,123.4 321.1,123.5 321.9,123.7 322.6,123.8 323.4,123.9 324.1,124.0 324.9,124.1 325.7,124.3 326.4,124.4 327.2,124.5 328.0,124.6 328.7,124.7 329.5,124.8 330.3,124.9 331.0,125.0 331.8,125.1 332.6,125.2 333.3,125.3 334.1,125.4 334.9,125.5 335.6,125.5 336.4,125.6 337.2,125.7 337.9,125.8 338.7,125.9 339.4,125.9 340.2,126.0 341.0,126.1 341.7,126.2 342.5,126.2 343.3,126.3 344.0,126.4 344.8,126.5 345.6,126.5 346.3,126.6 347.1,126.7 347.9,126.7 348.6,126.8 349.4,126.8 350.2,126.9 350.9,127.0 351.7,127.0 352.5,127.1 353.2,127.1 354.0,127.2 354.8,127.2 355.5,127.3 356.3,127.4 357.0,127.4 357.8,127.5 358.6,127.5 359.3,127.6 360.1,127.6 360.9,127.7 361.6,127.7 362.4,127.8 363.2,127.8 363.9,127.8 364.7,127.9 365.5,127.9 366.2,128.0 367.0,128.0 367.8,128.1 368.5,128.1 369.3,128.1 370.1,128.2 370.8,128.2 371.6,128.3 372.3,128.3 373.1,128.3 373.9,128.4 374.6,128.4 375.4,128.5 376.2,128.5 376.9,128.5 377.7,128.6 378.5,128.6 379.2,128.6 380.0,128.7\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"180.0\" cy=\"142.0\" r=\"6\" fill=\"white\" stroke=\"#D4622A\" stroke-width=\"2.6\"/><text x=\"172.0\" y=\"126.0\" font-size=\"13\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"end\" >hole at (1, 0.5)</text><circle cx=\"220.0\" cy=\"150.0\" r=\"6\" fill=\"#1a6b6b\"/><text x=\"220.0\" y=\"170.0\" font-size=\"12.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >zero: x = 2</text><text x=\"100.0\" y=\"14.0\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"start\" >r(x) = (x²−3x+2)/(x²−4x+3)</text></svg></div><p class=\"graph-caption\">Same function, three different behaviors at three special points: a zero where only the numerator vanishes (x=2), a vertical asymptote where only the denominator vanishes (x=3), and a hole where BOTH vanish together (x=1) — the graph is smooth right through the hole, so it's easy to miss unless you mark it.</p>"
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "What is a hole, really, and why does it happen?",
+      "answer": "A hole happens when the numerator and denominator share a common factor, like \\( (x-1) \\) in \\( \\dfrac{(x-1)(x-2)}{(x-1)(x-3)} \\). That shared factor makes the function undefined at \\( x=1 \\) (you still can't divide by zero), but everywhere else, that factor cancels, and the simplified function behaves perfectly smoothly right through that x-value — approaching a single, finite height rather than shooting off to infinity. The graph looks like an unbroken curve with one point secretly missing.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Near \\( x=1 \\), \\( r(x)=\\dfrac{x^2-3x+2}{x^2-4x+3} \\) takes values \\( 0.524, 0.502, 0.500, 0.499, 0.497,\\ldots \\) — clearly approaching \\( 0.5 \\), not infinity. That's the signature of a hole, not an asymptote.</p></div>"
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "What is a horizontal asymptote, and what does it mean for end behavior?",
+      "answer": "A horizontal asymptote is a height \\( y=L \\) that the function's output approaches as \\( x \\) heads toward \\( +\\infty \\) or \\( -\\infty \\) — it describes the function's long-run trend rather than any specific input value. Unlike a vertical asymptote, the graph is allowed to actually touch or cross a horizontal asymptote near the middle of the graph; it only has to settle toward that height way out at the far ends.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( r(x)=\\dfrac{1}{x^3} \\): as \\( x\\to\\infty \\), \\( r(x)\\to 0 \\); as \\( x\\to-\\infty \\), \\( r(x)\\to 0 \\) as well — so \\( y=0 \\) is a horizontal asymptote in both directions.</p></div>"
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "Why does comparing the degrees of the numerator and denominator tell me about horizontal asymptotes?",
+      "answer": "Divide every term, top and bottom, by \\( x \\) raised to the denominator's degree. Every fractional piece like \\( \\dfrac{1}{x^n} \\) then shrinks to 0 as \\( x\\to\\infty \\) (faq-4's pattern), leaving only whichever terms survive — and which terms survive is completely determined by how the two degrees compare to each other.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( r(x)=\\dfrac{3x^2-5x+1}{7x^2+2x-11} \\): dividing every term by \\( x^2 \\) gives \\( \\dfrac{3-\\frac{5}{x}+\\frac{1}{x^2}}{7+\\frac{2}{x}-\\frac{11}{x^2}} \\). As \\( x\\to\\infty \\), every fractional piece vanishes, leaving \\( \\dfrac{3}{7} \\) — so \\( y=\\dfrac{3}{7} \\) is the horizontal asymptote.</p></div>"
+    },
+    {
+      "id": "faq-6",
+      "category": "sticking-points",
+      "question": "How do I find the domain of a rational function?",
+      "answer": "Set the denominator equal to zero and solve — every solution is excluded from the domain. Write the domain as all real numbers except that list, or in interval notation with those points removed.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( f(x)=\\dfrac{-(x-1)(x-4)}{2(x+3)^2(x-1)} \\): the denominator is zero when \\( x=-3 \\) or \\( x=1 \\), so the domain is all reals except \\( -3 \\) and \\( 1 \\).</p></div>"
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How do I find the zeros of a rational function?",
+      "answer": "Set the numerator equal to zero and solve, then double-check that none of those candidate zeros also make the denominator zero — if one does, it's actually a hole (faq-3), not a genuine zero.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( f(x)=\\dfrac{-(x-1)(x-4)}{2(x+3)^2(x-1)} \\): the numerator is zero at \\( x=1 \\) and \\( x=4 \\). But \\( x=1 \\) also zeros the denominator — that's a hole, not a zero. Only \\( x=4 \\) is a genuine zero.</p></div>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I tell whether an undefined point is a vertical asymptote or a hole?",
+      "answer": "Factor both the numerator and denominator completely. If a factor \\( (x-a) \\) appears in the denominator but NOT in the numerator, it's a vertical asymptote at \\( x=a \\). If the exact same factor appears in BOTH, it cancels, and that point is a hole instead (see faq-13 for what happens when the two sides have different powers of that factor).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( r(x)=\\dfrac{(x-1)(x-2)}{(x-1)(x-3)} \\): the factor \\( (x-1) \\) is in both top and bottom (hole at \\( x=1 \\)); the factor \\( (x-3) \\) is only in the bottom (vertical asymptote at \\( x=3 \\)).</p></div>"
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How do I find the horizontal asymptote when the numerator and denominator have the same degree?",
+      "answer": "Take the ratio of the two leading coefficients — the coefficients on the highest-power terms in the numerator and denominator.<div class=\"graph-wrap\"><svg viewBox=\"0 0 640 175\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><line x1=\"10.0\" y1=\"150.0\" x2=\"195.0\" y2=\"150.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"10.0\" y1=\"90.7\" x2=\"195.0\" y2=\"90.7\" stroke=\"#1a6b6b\" stroke-width=\"1.8\" stroke-dasharray=\"5,4\" /><polyline points=\"15.0,30.0 16.3,30.0 17.5,30.0 18.8,49.7 20.1,72.5 21.3,85.7 22.6,93.8 23.9,99.0 25.1,102.3 26.4,104.4 27.7,105.8 28.9,106.6 30.2,107.1 31.5,107.2 32.7,107.3 34.0,107.2 35.3,107.0 36.5,106.7 37.8,106.4 39.1,106.1 40.3,105.8 41.6,105.4 42.9,105.1 44.1,104.8 45.4,104.4 46.7,104.1 47.9,103.8 49.2,103.4 50.5,103.1 51.7,102.8 53.0,102.6 54.3,102.3 55.5,102.0 56.8,101.8 58.1,101.5 59.3,101.3 60.6,101.0 61.8,100.8 63.1,100.6 64.4,100.4 65.6,100.2 66.9,100.0 68.2,99.8 69.4,99.6 70.7,99.5 72.0,99.3 73.2,99.1 74.5,99.0 75.8,98.8 77.0,98.7 78.3,98.5 79.6,98.4 80.8,98.3 82.1,98.1 83.4,98.0 84.6,97.9 85.9,97.8 87.2,97.7 88.4,97.6 89.7,97.4 91.0,97.3 92.2,97.2 93.5,97.1 94.8,97.0 96.0,97.0 97.3,96.9 98.6,96.8 99.8,96.7 101.1,96.6 102.4,96.5 103.6,96.5 104.9,96.4 106.2,96.3 107.4,96.2 108.7,96.2 110.0,96.1 111.2,96.0 112.5,96.0 113.8,95.9 115.0,95.8 116.3,95.8 117.6,95.7 118.8,95.6 120.1,95.6 121.4,95.5 122.6,95.5 123.9,95.4 125.2,95.4 126.4,95.3 127.7,95.3 129.0,95.2 130.2,95.2 131.5,95.1 132.8,95.1 134.0,95.0 135.3,95.0 136.6,95.0 137.8,94.9 139.1,94.9 140.4,94.8 141.6,94.8 142.9,94.7 144.2,94.7 145.4,94.7 146.7,94.6 147.9,94.6 149.2,94.6 150.5,94.5 151.7,94.5 153.0,94.5 154.3,94.4 155.5,94.4 156.8,94.4 158.1,94.3 159.3,94.3 160.6,94.3 161.9,94.2 163.1,94.2 164.4,94.2 165.7,94.1 166.9,94.1 168.2,94.1 169.5,94.1 170.7,94.0 172.0,94.0 173.3,94.0 174.5,94.0 175.8,93.9 177.1,93.9 178.3,93.9 179.6,93.9 180.9,93.8 182.1,93.8 183.4,93.8 184.7,93.8 185.9,93.7 187.2,93.7 188.5,93.7 189.7,93.7 191.0,93.7\" fill=\"none\" stroke=\"#1a6b6b\" stroke-width=\"2.8\"/><text x=\"102.0\" y=\"20.0\" font-size=\"13.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >Same degree</text><text x=\"102.0\" y=\"40.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >y = 4/9</text><line x1=\"220.0\" y1=\"150.0\" x2=\"405.0\" y2=\"150.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"220.0\" y1=\"150.0\" x2=\"405.0\" y2=\"150.0\" stroke=\"#D4622A\" stroke-width=\"1.8\" stroke-dasharray=\"5,4\" /><polyline points=\"225.0,190.0 226.3,30.0 227.5,30.0 228.8,37.6 230.1,77.7 231.3,99.4 232.6,112.4 233.9,120.8 235.1,126.4 236.4,130.4 237.7,133.4 238.9,135.6 240.2,137.4 241.5,138.8 242.7,140.0 244.0,140.9 245.3,141.8 246.5,142.5 247.8,143.1 249.1,143.6 250.3,144.1 251.6,144.5 252.9,144.9 254.1,145.2 255.4,145.5 256.7,145.8 257.9,146.0 259.2,146.2 260.5,146.4 261.7,146.6 263.0,146.8 264.3,147.0 265.5,147.1 266.8,147.2 268.1,147.4 269.3,147.5 270.6,147.6 271.8,147.7 273.1,147.8 274.4,147.9 275.6,148.0 276.9,148.1 278.2,148.1 279.4,148.2 280.7,148.3 282.0,148.3 283.2,148.4 284.5,148.5 285.8,148.5 287.0,148.6 288.3,148.6 289.6,148.7 290.8,148.7 292.1,148.7 293.4,148.8 294.6,148.8 295.9,148.9 297.2,148.9 298.4,148.9 299.7,149.0 301.0,149.0 302.2,149.0 303.5,149.0 304.8,149.1 306.0,149.1 307.3,149.1 308.6,149.1 309.8,149.2 311.1,149.2 312.4,149.2 313.6,149.2 314.9,149.2 316.2,149.3 317.4,149.3 318.7,149.3 320.0,149.3 321.2,149.3 322.5,149.3 323.8,149.4 325.0,149.4 326.3,149.4 327.6,149.4 328.8,149.4 330.1,149.4 331.4,149.4 332.6,149.5 333.9,149.5 335.2,149.5 336.4,149.5 337.7,149.5 339.0,149.5 340.2,149.5 341.5,149.5 342.8,149.5 344.0,149.5 345.3,149.6 346.6,149.6 347.8,149.6 349.1,149.6 350.4,149.6 351.6,149.6 352.9,149.6 354.2,149.6 355.4,149.6 356.7,149.6 357.9,149.6 359.2,149.6 360.5,149.6 361.7,149.6 363.0,149.7 364.3,149.7 365.5,149.7 366.8,149.7 368.1,149.7 369.3,149.7 370.6,149.7 371.9,149.7 373.1,149.7 374.4,149.7 375.7,149.7 376.9,149.7 378.2,149.7 379.5,149.7 380.7,149.7 382.0,149.7 383.3,149.7 384.5,149.7 385.8,149.7 387.1,149.7 388.3,149.7 389.6,149.7 390.9,149.8 392.1,149.8 393.4,149.8 394.7,149.8 395.9,149.8 397.2,149.8 398.5,149.8 399.7,149.8 401.0,149.8\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"2.8\"/><text x=\"312.0\" y=\"20.0\" font-size=\"13.5\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >Numerator lower degree</text><text x=\"312.0\" y=\"40.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >y = 0</text><line x1=\"430.0\" y1=\"150.0\" x2=\"615.0\" y2=\"150.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><polyline points=\"435.0,138.3 436.3,138.5 437.5,138.7 438.8,138.8 440.1,138.9 441.3,138.9 442.6,138.9 443.9,138.9 445.1,138.8 446.4,138.7 447.7,138.6 448.9,138.4 450.2,138.2 451.5,138.0 452.7,137.8 454.0,137.5 455.3,137.2 456.5,136.9 457.8,136.6 459.1,136.3 460.3,136.0 461.6,135.6 462.9,135.2 464.1,134.8 465.4,134.4 466.7,134.0 467.9,133.6 469.2,133.1 470.5,132.6 471.7,132.2 473.0,131.7 474.3,131.2 475.5,130.7 476.8,130.2 478.1,129.6 479.3,129.1 480.6,128.5 481.8,128.0 483.1,127.4 484.4,126.8 485.6,126.2 486.9,125.6 488.2,125.0 489.4,124.4 490.7,123.7 492.0,123.1 493.2,122.4 494.5,121.7 495.8,121.1 497.0,120.4 498.3,119.7 499.6,119.0 500.8,118.3 502.1,117.6 503.4,116.8 504.6,116.1 505.9,115.4 507.2,114.6 508.4,113.8 509.7,113.1 511.0,112.3 512.2,111.5 513.5,110.7 514.8,109.9 516.0,109.1 517.3,108.3 518.6,107.4 519.8,106.6 521.1,105.7 522.4,104.9 523.6,104.0 524.9,103.1 526.2,102.3 527.4,101.4 528.7,100.5 530.0,99.6 531.2,98.6 532.5,97.7 533.8,96.8 535.0,95.9 536.3,94.9 537.6,93.9 538.8,93.0 540.1,92.0 541.4,91.0 542.6,90.0 543.9,89.1 545.2,88.0 546.4,87.0 547.7,86.0 549.0,85.0 550.2,84.0 551.5,82.9 552.8,81.9 554.0,80.8 555.3,79.7 556.6,78.7 557.8,77.6 559.1,76.5 560.4,75.4 561.6,74.3 562.9,73.2 564.2,72.0 565.4,70.9 566.7,69.8 567.9,68.6 569.2,67.5 570.5,66.3 571.7,65.2 573.0,64.0 574.3,62.8 575.5,61.6 576.8,60.4 578.1,59.2 579.3,58.0 580.6,56.7 581.9,55.5 583.1,54.3 584.4,53.0 585.7,51.8 586.9,50.5 588.2,49.2 589.5,48.0 590.7,46.7 592.0,45.4 593.3,44.1 594.5,42.8 595.8,41.5 597.1,40.1 598.3,38.8 599.6,37.5 600.9,36.1 602.1,34.8 603.4,33.4 604.7,32.0 605.9,30.6 607.2,30.0 608.5,30.0 609.7,30.0 611.0,30.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"2.8\"/><text x=\"617.0\" y=\"34.0\" font-size=\"20\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"start\" >↑</text><text x=\"522.0\" y=\"20.0\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >Numerator higher degree</text><text x=\"522.0\" y=\"40.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >no horizontal asymptote</text></svg></div><p class=\"graph-caption\">Compare the highest power in the numerator to the highest power in the denominator: equal powers give a horizontal asymptote at the ratio of leading coefficients; a smaller numerator power gives y=0; a larger numerator power means no horizontal asymptote at all — the function grows without bound instead.</p><div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( f(x)=\\dfrac{4x^3-3x^2+6}{9x^3+7x-5} \\): both numerator and denominator have degree 3, so the horizontal asymptote is \\( y=\\dfrac{4}{9} \\), the ratio of leading coefficients.</p></div>"
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "How do I find the horizontal asymptote when the degrees are different?",
+      "answer": "If the denominator's degree is larger, the horizontal asymptote is always \\( y=0 \\). If the numerator's degree is larger, there is NO horizontal asymptote at all — the function grows without bound instead.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( g(x)=\\dfrac{4x^3-3x^2+6}{9x^5+7x-5} \\): denominator's degree (5) is bigger, so \\( y=0 \\).</p><p class=\"math-line\">\\( h(x)=\\dfrac{4x^5-3x^2+6}{9x^3+7x-5} \\): numerator's degree (5) is bigger, so there's no horizontal asymptote.</p></div>"
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I find the y-value of a hole, not just its x-location?",
+      "answer": "Cancel the common factor algebraically first, then substitute the hole's x-value into what's LEFT — never into the original, uncancelled expression, since that would just give you 0/0 again.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( f(x)=\\dfrac{-(x-1)(x-4)}{2(x+3)^2(x-1)} \\) simplifies (canceling \\( x-1 \\)) to \\( \\dfrac{4-x}{2(x+3)^2} \\). Substituting \\( x=1 \\) into the simplified form: \\( \\dfrac{4-1}{2(4)^2}=\\dfrac{3}{32} \\) — the hole sits at \\( \\left(1,\\dfrac{3}{32}\\right) \\).</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I sketch a full rational function graph from its equation?",
+      "answer": "Work through the features in order: factor completely, find the domain and identify every hole and vertical asymptote (faq-8), find the zeros (faq-7), find the y-intercept by evaluating at x=0, find the horizontal asymptote by comparing degrees (faq-9, faq-10), and find any hole's exact y-value (faq-11). Then sketch the asymptotes and hole as guides and draw a smooth curve that respects all of them.<div class=\"graph-wrap\"><svg viewBox=\"0 0 400 340\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><line x1=\"20.0\" y1=\"250.0\" x2=\"400.0\" y2=\"250.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" /><line x1=\"210.0\" y1=\"38.4\" x2=\"210.0\" y2=\"285.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" /><text x=\"24.0\" y=\"266.0\" font-size=\"12\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"start\" >y = 0 (HA)</text><line x1=\"114.0\" y1=\"44.4\" x2=\"114.0\" y2=\"285.0\" stroke=\"#D4622A\" stroke-width=\"2.2\" stroke-dasharray=\"6,4\" /><text x=\"114.0\" y=\"34.4\" font-size=\"12.5\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >x = −3 (VA)</text><polyline points=\"21.2,231.2 21.8,231.0 22.3,230.8 22.9,230.6 23.4,230.4 24.0,230.2 24.6,229.9 25.1,229.7 25.7,229.5 26.2,229.3 26.8,229.0 27.4,228.8 27.9,228.6 28.5,228.3 29.0,228.1 29.6,227.8 30.2,227.6 30.7,227.3 31.3,227.1 31.8,226.8 32.4,226.5 32.9,226.2 33.5,225.9 34.1,225.6 34.6,225.3 35.2,225.0 35.7,224.7 36.3,224.4 36.9,224.1 37.4,223.8 38.0,223.4 38.5,223.1 39.1,222.7 39.7,222.4 40.2,222.0 40.8,221.6 41.3,221.2 41.9,220.8 42.5,220.4 43.0,220.0 43.6,219.6 44.1,219.2 44.7,218.7 45.3,218.3 45.8,217.8 46.4,217.3 46.9,216.9 47.5,216.4 48.1,215.9 48.6,215.3 49.2,214.8 49.7,214.3 50.3,213.7 50.9,213.1 51.4,212.5 52.0,211.9 52.5,211.3 53.1,210.7 53.7,210.0 54.2,209.4 54.8,208.7 55.3,208.0 55.9,207.2 56.4,206.5 57.0,205.7 57.6,204.9 58.1,204.1 58.7,203.3 59.2,202.4 59.8,201.5 60.4,200.6 60.9,199.6 61.5,198.7 62.0,197.7 62.6,196.6 63.2,195.6 63.7,194.4 64.3,193.3 64.8,192.1 65.4,190.9 66.0,189.6 66.5,188.3 67.1,187.0 67.6,185.6 68.2,184.2 68.8,182.7 69.3,181.1 69.9,179.5 70.4,177.8 71.0,176.1 71.6,174.3 72.1,172.4 72.7,170.5 73.2,168.4 73.8,166.3 74.4,164.1 74.9,161.8 75.5,159.5 76.0,157.0 76.6,154.4 77.1,151.6 77.7,148.8 78.3,145.8 78.8,142.7 79.4,139.5 79.9,136.1 80.5,132.5 81.1,128.7 81.6,124.8 82.2,120.6 82.7,116.2 83.3,111.6 83.9,106.7 84.4,101.6 85.0,96.1 85.5,90.4 86.1,84.3 86.7,77.8 87.2,71.0 87.8,63.6 88.3,55.9 88.9,48.4 89.5,48.4 90.0,48.4 90.6,48.4 91.1,48.4 91.7,48.4 92.3,48.4 92.8,48.4 93.4,48.4 93.9,48.4 94.5,48.4 95.1,48.4 95.6,48.4 96.2,48.4 96.7,48.4 97.3,48.4 97.9,48.4 98.4,48.4 99.0,48.4 99.5,48.4 100.1,48.4 100.6,48.4 101.2,48.4 101.8,48.4 102.3,48.4 102.9,48.4 103.4,48.4 104.0,48.4 104.6,48.4 105.1,48.4 105.7,48.4 106.2,48.4 106.8,48.4 107.4,48.4 107.9,48.4 108.5,48.4 109.0,48.4 109.6,48.4 110.2,48.4\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"117.8,48.4 119.6,48.4 121.4,48.4 123.1,48.4 124.9,48.4 126.7,48.4 128.4,48.4 130.2,48.4 132.0,48.4 133.7,48.4 135.5,48.4 137.3,60.3 139.0,87.6 140.8,109.6 142.6,127.5 144.3,142.3 146.1,154.7 147.9,165.2 149.6,174.1 151.4,181.8 153.2,188.4 154.9,194.1 156.7,199.1 158.5,203.5 160.2,207.5 162.0,210.9 163.8,214.0 165.6,216.8 167.3,219.3 169.1,221.5 170.9,223.5 172.6,225.4 174.4,227.0 176.2,228.5 177.9,229.9 179.7,231.2 181.5,232.4 183.2,233.5 185.0,234.5 186.8,235.4 188.5,236.2 190.3,237.0 192.1,237.7 193.8,238.4 195.6,239.0 197.4,239.6 199.1,240.2 200.9,240.7 202.7,241.2 204.4,241.6 206.2,242.1 208.0,242.5 209.7,242.8 211.5,243.2 213.3,243.5 215.0,243.8 216.8,244.1 218.6,244.4 220.3,244.7 222.1,244.9 223.9,245.2 225.6,245.4 227.4,245.6 229.2,245.8 230.9,246.0 232.7,246.2 234.5,246.3 236.2,246.5 238.0,246.7 239.8,246.8 241.5,247.0 243.3,247.1 245.1,247.2 246.8,247.4 248.6,247.5 250.4,247.6 252.1,247.7 253.9,247.8 255.7,247.9 257.4,248.0 259.2,248.1 261.0,248.2 262.7,248.3 264.5,248.3 266.3,248.4 268.0,248.5 269.8,248.6 271.6,248.6 273.3,248.7 275.1,248.8 276.9,248.8 278.6,248.9 280.4,248.9 282.2,249.0 283.9,249.0 285.7,249.1 287.5,249.1 289.2,249.2 291.0,249.2 292.8,249.3 294.5,249.3 296.3,249.4 298.1,249.4 299.8,249.4 301.6,249.5 303.4,249.5 305.1,249.5 306.9,249.6 308.7,249.6 310.4,249.6 312.2,249.7 314.0,249.7 315.7,249.7 317.5,249.7 319.3,249.8 321.1,249.8 322.8,249.8 324.6,249.8 326.4,249.9 328.1,249.9 329.9,249.9 331.7,249.9 333.4,250.0 335.2,250.0 337.0,250.0 338.7,250.0 340.5,250.0 342.3,250.0 344.0,250.1 345.8,250.1 347.6,250.1 349.3,250.1 351.1,250.1 352.9,250.1 354.6,250.1 356.4,250.2 358.2,250.2 359.9,250.2 361.7,250.2 363.5,250.2 365.2,250.2 367.0,250.2 368.8,250.2 370.5,250.3 372.3,250.3 374.1,250.3 375.8,250.3 377.6,250.3 379.4,250.3 381.1,250.3 382.9,250.3 384.7,250.3 386.4,250.3 388.2,250.3 390.0,250.3 391.7,250.4 393.5,250.4 395.3,250.4 397.0,250.4 398.8,250.4\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"338.0\" cy=\"250.0\" r=\"6\" fill=\"#1a6b6b\"/><text x=\"338.0\" y=\"272.0\" font-size=\"12\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >root: x = 4</text><circle cx=\"210.0\" cy=\"242.9\" r=\"5.5\" fill=\"#0a3f52\"/><text x=\"200.0\" y=\"230.9\" font-size=\"12\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"end\" >y-int: (0, 2/9)</text><circle cx=\"242.0\" cy=\"247.0\" r=\"6\" fill=\"white\" stroke=\"#D4622A\" stroke-width=\"2.6\"/><text x=\"242.0\" y=\"273.0\" font-size=\"12\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >hole:</text><text x=\"242.0\" y=\"289.0\" font-size=\"12\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >(1, 3/32)</text><text x=\"20.0\" y=\"24.4\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"start\" >f(x) = −(x−1)(x−4) / [2(x+3)²(x−1)]</text></svg></div><p class=\"graph-caption\">Every feature at once: a root at x=4, y-intercept (0, 2/9), a hole at (1, 3/32) where the (x−1) factor cancels, a vertical asymptote at x=−3 (curve rises on both sides, since the (x+3)² stays positive), and a horizontal asymptote at y=0 (denominator's degree is higher).</p>"
+    },
+    {
+      "id": "faq-13",
+      "category": "sticking-points",
+      "question": "How can a factor's multiplicity change whether a shared root becomes a hole or a vertical asymptote?",
+      "answer": "What matters is which side has the HIGHER power of that shared factor. If the numerator's power is greater than or equal to the denominator's power at that value, the factor fully (or more than fully) cancels and you get a hole. If the denominator's power is strictly greater, some of that factor is left over in the bottom after canceling, and that leftover creates a genuine vertical asymptote instead.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( w(x)=\\dfrac{(x-2)(x+3)}{[(x-2)(x-3)]^2} \\): at \\( x=2 \\), the numerator has power 1 but the denominator has power 2. The denominator's higher power wins, so \\( x=2 \\) is a VERTICAL ASYMPTOTE — not a hole, even though both sides technically hit zero there.</p></div>"
+    },
+    {
+      "id": "faq-14",
+      "category": "sticking-points",
+      "question": "When a hole exists, how does the \"leftover\" multiplicity after cancelling affect the graph's shape there?",
+      "answer": "Whatever power of the shared factor remains in the numerator AFTER canceling behaves exactly like PR3's multiplicity rule at an ordinary zero: an odd leftover power makes the curve pass through the hole's height at a slant (like it's \\\"crossing\\\"), while an even leftover power makes the curve touch that height and turn back, flattening out symmetrically on both sides.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( s(x)=\\dfrac{(x-2)^2(x+3)}{(x-2)(x-3)} \\): at \\( x=2 \\), numerator power 2 minus denominator power 1 leaves 1 (odd) — the hole behaves like an odd-multiplicity crossing.</p><p class=\"math-line\">\\( u(x)=\\dfrac{(x-2)^3(x+3)}{(x-2)(x-3)} \\): at \\( x=2 \\), leftover power \\( 3-1=2 \\) (even) — the hole behaves like an even-multiplicity touch-and-turn.</p></div>"
+    },
+    {
+      "id": "faq-15",
+      "category": "connections",
+      "question": "How does finding domain/excluded values here connect to PR6's rational equations?",
+      "answer": "It's the exact same first step. PR6 taught you to find every value that makes a denominator zero before you even start solving, because those values can never be valid answers — that's precisely this section's domain-finding process (faq-6), just applied to a function instead of an equation. A PR6 \\\"excluded value\\\" and a PR7 \\\"point not in the domain\\\" are the same calculation."
+    },
+    {
+      "id": "faq-16",
+      "category": "connections",
+      "question": "How does this connect to PR3's zeros, multiplicity, and end behavior for polynomials?",
+      "answer": "Every idea here is PR3's polynomial toolkit, applied twice — once to the numerator and once to the denominator — and then combined. A rational function's zeros come from the numerator's zeros (PR3); its vertical asymptotes and holes come from the denominator's zeros; and faq-14's odd/even hole-shape rule is literally PR3's crossing-vs-touching multiplicity rule, just showing up at a hole instead of at an ordinary x-intercept."
+    },
+    {
+      "id": "faq-17",
+      "category": "connections",
+      "question": "How does this connect to PR4's long division?",
+      "answer": "When a rational function is improper (numerator's degree is greater than or equal to the denominator's), PR4's long division rewrites it as a polynomial plus a smaller proper remainder term. That polynomial piece is exactly what controls the function's end behavior in the numerator-degree-greater case from faq-10 — instead of no horizontal asymptote, the function actually follows that polynomial (a slant or curved asymptote) as \\( x\\to\\pm\\infty \\), a natural next question PR4's tool is what equips you to answer."
+    },
+    {
+      "id": "faq-18",
+      "category": "connections",
+      "question": "Why do rational functions and their asymptotic behavior matter beyond this course?",
+      "answer": "Rational functions model quantities built from a ratio or a rate: concentration as a solution is diluted, average cost per unit as production scales up, or population models with a limited carrying capacity. A vertical asymptote often marks a real physical limit a model breaks down near (dividing by an amount approaching zero), while a horizontal asymptote often represents a long-run steady state or saturation point the whole system settles toward. Recognizing these features is central to reading what a rational model is actually claiming about the real world."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "The Domain of Rational Functions",
+      "url": "https://youtu.be/v0IhvIzCc_I",
+      "description": "Finding the domain of a rational function by identifying where the denominator equals zero.",
+      "category": "domain-and-features",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-6"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Determining Horizontal and Vertical Asymptotes of Rational Functions",
+      "url": "https://www.youtube.com/watch?v=wBZxVxiJS9I",
+      "description": "Finding both horizontal and vertical asymptotes of a rational function from its equation.",
+      "category": "domain-and-features",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-9",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Determine Domain, Holes, and Asymptotes of a Rational Function",
+      "url": "https://www.youtube.com/watch?v=4sfILyxkLv8",
+      "description": "A full worked example finding the domain, any holes, and the vertical and horizontal asymptotes of a rational function together.",
+      "category": "full-graphing",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-11",
+        "faq-12"
+      ]
+    }
+  ],
+  "apps": [],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Practice Finding Domain, Zeros, and Holes vs. Asymptotes",
+        "prompt": "Give me a rational function in factored (or factorable) form. Ask me to find its domain, then identify which excluded values are vertical asymptotes and which are holes, by checking whether the same factor appears in both the numerator and denominator. Give me a few more examples of increasing difficulty."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice Horizontal Asymptotes",
+        "prompt": "Give me several rational functions with different relationships between the numerator and denominator degrees (same degree, numerator smaller, numerator larger). Ask me to predict whether there's a horizontal asymptote, and if so, what it is, before I calculate anything. Check my reasoning."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice Finding a Hole's Exact Location",
+        "prompt": "Give me a rational function with a common factor that cancels. Walk me through simplifying it first, then substituting the hole's x-value into the SIMPLIFIED form (not the original) to find the hole's y-value. Give me a few more examples and check my work."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Practice a Full Graph Sketch",
+        "prompt": "Give me a rational function and walk me through sketching its complete graph: domain, zeros, holes, vertical asymptotes, horizontal asymptote, and y-intercept, in that order. Check each feature before I move to the next, and have me describe what the final sketch should look like."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Explore the Multiplicity-Competition Rule",
+        "prompt": "I'm learning that when a factor appears in both the numerator and denominator with different powers, whichever power is higher determines whether it's a hole or a vertical asymptote. Give me a few rational functions where this comparison matters, and ask me to predict hole vs. asymptote by comparing the powers before I simplify. Then check my reasoning."
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section PR7 (Properties and Graphs of Rational Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
